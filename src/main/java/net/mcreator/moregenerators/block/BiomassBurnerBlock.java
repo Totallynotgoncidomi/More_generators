@@ -16,7 +16,7 @@ import java.util.Collections;
 
 public class BiomassBurnerBlock extends Block {
 	public BiomassBurnerBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override
