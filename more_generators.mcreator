@@ -64,6 +64,19 @@
           "src/main/resources/assets/more_generators/models/block/biomass_burner.json"
         ]
       }
+    },
+    {
+      "name": "Biorecp",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biorecp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/more_generators/recipes/biorecp.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
