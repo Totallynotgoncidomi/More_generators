@@ -29,6 +29,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.moregenerators.init.MoreGeneratorsModTabs;
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluidTypes;
@@ -55,6 +56,8 @@ public class MoreGeneratorsMod {
 		MoreGeneratorsModBlocks.REGISTRY.register(bus);
 
 		MoreGeneratorsModItems.REGISTRY.register(bus);
+
+		MoreGeneratorsModTabs.REGISTRY.register(bus);
 
 		MoreGeneratorsModFluids.REGISTRY.register(bus);
 		MoreGeneratorsModFluidTypes.REGISTRY.register(bus);

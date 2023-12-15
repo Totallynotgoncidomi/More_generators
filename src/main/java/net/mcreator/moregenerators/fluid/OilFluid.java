@@ -7,6 +7,8 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.ParticleOptions;
 
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
@@ -19,6 +21,11 @@ public abstract class OilFluid extends ForgeFlowingFluid {
 
 	private OilFluid() {
 		super(PROPERTIES);
+	}
+
+	@Override
+	public ParticleOptions getDripParticle() {
+		return ParticleTypes.FALLING_WATER;
 	}
 
 	public static class Source extends OilFluid {
