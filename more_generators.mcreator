@@ -3,6 +3,7 @@
     {
       "name": "SSS",
       "type": "block",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sss",
@@ -14,13 +15,67 @@
           "src/main/java/net/mcreator/moregenerators/block/SSSBlock.java"
         ]
       }
+    },
+    {
+      "name": "Biofuel",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biofuel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/more_generators/models/item/biofuel.json",
+          "src/main/java/net/mcreator/moregenerators/item/BiofuelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/fluid/types/OilFluidType.java",
+          "src/main/java/net/mcreator/moregenerators/fluid/OilFluid.java",
+          "src/main/java/net/mcreator/moregenerators/block/OilBlock.java",
+          "src/main/resources/assets/more_generators/models/item/oil_bucket.json",
+          "src/main/resources/assets/more_generators/blockstates/oil.json",
+          "src/main/java/net/mcreator/moregenerators/item/OilItem.java",
+          "src/main/resources/assets/more_generators/models/block/oil.json"
+        ]
+      }
+    },
+    {
+      "name": "BiomassBurner",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomass_burner",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/more_generators/models/item/biomass_burner.json",
+          "src/main/resources/assets/more_generators/blockstates/biomass_burner.json",
+          "src/main/java/net/mcreator/moregenerators/block/BiomassBurnerBlock.java",
+          "src/main/resources/assets/more_generators/models/block/biomass_burner.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.more_generators.sss": "SSS"
+      "fluid.more_generators.oil": "Oil",
+      "item.more_generators.oil_bucket": "Oil Bucket",
+      "block.more_generators.sss": "SSS",
+      "block.more_generators.oil": "Oil",
+      "item.more_generators.biofuel": "Biofuel",
+      "block.more_generators.biomass_burner": "Biomass Burner"
     }
   },
   "foldersRoot": {

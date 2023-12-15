@@ -30,6 +30,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
+import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
+import net.mcreator.moregenerators.init.MoreGeneratorsModFluidTypes;
 import net.mcreator.moregenerators.init.MoreGeneratorsModBlocks;
 
 import java.util.function.Supplier;
@@ -54,6 +56,8 @@ public class MoreGeneratorsMod {
 
 		MoreGeneratorsModItems.REGISTRY.register(bus);
 
+		MoreGeneratorsModFluids.REGISTRY.register(bus);
+		MoreGeneratorsModFluidTypes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";
