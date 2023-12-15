@@ -27,8 +27,26 @@
           "x": 202,
           "y": 72
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_s",
+          "text": {
+            "fixedValue": "Biomass Burner"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 180,
+          "y": 45
+        }
       }
     ],
+    "onTick": {
+      "name": "Biomasswork"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,

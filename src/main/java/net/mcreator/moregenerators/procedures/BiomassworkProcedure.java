@@ -22,27 +22,29 @@ public class BiomassworkProcedure {
 		if (entity == null)
 			return;
 		double energia = 0;
-		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == MoreGeneratorsModItems.BIOFUEL.get()) {
-			MoreGeneratorsMod.queueServerWork(40, () -> {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					((Slot) _slots.get(0)).remove(1);
-					_player.containerMenu.broadcastChanges();
-				}
-			});
-			energia = new Object() {
-				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
-					AtomicInteger _retval = new AtomicInteger(0);
-					BlockEntity _ent = level.getBlockEntity(pos);
+		if (energia < 400000) {
+			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == MoreGeneratorsModItems.BIOFUEL.get()) {
+				MoreGeneratorsMod.queueServerWork(200, () -> {
+					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+						((Slot) _slots.get(0)).remove(1);
+						_player.containerMenu.broadcastChanges();
+					}
+				});
+				energia = new Object() {
+					public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
+						AtomicInteger _retval = new AtomicInteger(0);
+						BlockEntity _ent = level.getBlockEntity(pos);
+						if (_ent != null)
+							_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
+						return _retval.get();
+					}
+				}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), 100);
+				{
+					BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
+					int _amount = (int) energia;
 					if (_ent != null)
-						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.receiveEnergy(_amount, true)));
-					return _retval.get();
+						_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 				}
-			}.receiveEnergySimulate(world, BlockPos.containing(x, y, z), 100);
-			{
-				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y, z));
-				int _amount = (int) energia;
-				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 		}
 		energia = new Object() {

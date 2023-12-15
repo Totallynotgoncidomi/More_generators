@@ -65,6 +65,7 @@ public class BiomassguiScreen extends AbstractContainerScreen<BiomassguiMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.more_generators.biomassgui.label_s"), 54, 8, -12829636, false);
 	}
 
 	@Override
