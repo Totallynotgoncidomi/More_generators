@@ -5,5 +5,6 @@
   "block.more_generators.sss": "SSS",
   "block.more_generators.oil": "Oil",
   "item.more_generators.biofuel": "Biofuel",
-  "block.more_generators.biomass_burner": "Biomass Burner"
+  "block.more_generators.biomass_burner": "Biomass Burner",
+  "item.more_generators.energy_meter": "Energy Meter"
 }

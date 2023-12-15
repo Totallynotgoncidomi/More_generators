@@ -24,6 +24,7 @@ public class MoreGeneratorsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(MoreGeneratorsModItems.BIOFUEL.get());
+			tabData.accept(MoreGeneratorsModItems.ENERGY_METER.get());
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

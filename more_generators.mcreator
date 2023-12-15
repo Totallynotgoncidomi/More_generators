@@ -166,6 +166,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnergyMeter",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_meter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/more_generators/models/item/energy_meter.json",
+          "src/main/java/net/mcreator/moregenerators/item/EnergyMeterItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -178,7 +192,8 @@
       "block.more_generators.sss": "SSS",
       "block.more_generators.oil": "Oil",
       "item.more_generators.biofuel": "Biofuel",
-      "block.more_generators.biomass_burner": "Biomass Burner"
+      "block.more_generators.biomass_burner": "Biomass Burner",
+      "item.more_generators.energy_meter": "Energy Meter"
     }
   },
   "foldersRoot": {
