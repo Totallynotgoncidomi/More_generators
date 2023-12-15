@@ -58,10 +58,11 @@
       "registry_name": "biomass_burner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/item/biomass_burner.json",
           "src/main/resources/assets/more_generators/blockstates/biomass_burner.json",
           "src/main/java/net/mcreator/moregenerators/block/BiomassBurnerBlock.java",
-          "src/main/resources/assets/more_generators/models/block/biomass_burner.json"
+          "src/main/resources/assets/more_generators/models/block/biomass_burner.json",
+          "src/main/java/net/mcreator/moregenerators/block/entity/BiomassBurnerBlockEntity.java",
+          "src/main/resources/assets/more_generators/models/item/biomass_burner.json"
         ]
       }
     },
@@ -75,6 +76,55 @@
       "metadata": {
         "files": [
           "src/main/resources/data/more_generators/recipes/biorecp.json"
+        ]
+      }
+    },
+    {
+      "name": "Biomassgui",
+      "type": "gui",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomassgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/client/gui/BiomassguiScreen.java",
+          "src/main/java/net/mcreator/moregenerators/world/inventory/BiomassguiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Biomasswork",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomasswork",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/procedures/BiomassworkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }

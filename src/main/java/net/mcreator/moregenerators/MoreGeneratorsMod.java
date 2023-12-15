@@ -30,10 +30,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.moregenerators.init.MoreGeneratorsModTabs;
+import net.mcreator.moregenerators.init.MoreGeneratorsModMenus;
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluidTypes;
 import net.mcreator.moregenerators.init.MoreGeneratorsModBlocks;
+import net.mcreator.moregenerators.init.MoreGeneratorsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -54,11 +56,12 @@ public class MoreGeneratorsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MoreGeneratorsModBlocks.REGISTRY.register(bus);
-
+		MoreGeneratorsModBlockEntities.REGISTRY.register(bus);
 		MoreGeneratorsModItems.REGISTRY.register(bus);
 
 		MoreGeneratorsModTabs.REGISTRY.register(bus);
 
+		MoreGeneratorsModMenus.REGISTRY.register(bus);
 		MoreGeneratorsModFluids.REGISTRY.register(bus);
 		MoreGeneratorsModFluidTypes.REGISTRY.register(bus);
 	}
