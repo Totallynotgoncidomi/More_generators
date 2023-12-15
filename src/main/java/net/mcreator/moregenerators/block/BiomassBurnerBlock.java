@@ -37,7 +37,7 @@ import io.netty.buffer.Unpooled;
 
 public class BiomassBurnerBlock extends Block implements EntityBlock {
 	public BiomassBurnerBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.METAL).strength(1f, 10f));
 	}
 
 	@Override
