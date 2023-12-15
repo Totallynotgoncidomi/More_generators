@@ -33,6 +33,6 @@ public class EnergyMeterRightclickedOnBlockProcedure {
 						_ent.getCapability(ForgeCapabilities.ENERGY, direction).ifPresent(capability -> _retval.set(capability.getMaxEnergyStored()));
 					return _retval.get();
 				}
-			}.getMaxEnergyStored(world, BlockPos.containing(x, y, z))) + "Energy at" + direction)), true);
+			}.getMaxEnergyStored(world, BlockPos.containing(x, y, z))) + " Energy at " + direction)), true);
 	}
 }
