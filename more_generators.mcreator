@@ -127,6 +127,45 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnergyMeterRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energy_meter_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/procedures/EnergyMeterRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
