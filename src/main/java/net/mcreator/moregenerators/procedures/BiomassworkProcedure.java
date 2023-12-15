@@ -24,7 +24,7 @@ public class BiomassworkProcedure {
 		double energia = 0;
 		if (energia < 400000) {
 			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == MoreGeneratorsModItems.BIOFUEL.get()) {
-				MoreGeneratorsMod.queueServerWork(200, () -> {
+				MoreGeneratorsMod.queueServerWork(20, () -> {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						((Slot) _slots.get(0)).remove(1);
 						_player.containerMenu.broadcastChanges();
