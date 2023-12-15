@@ -11,6 +11,6 @@ import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
 
 public class OilBlock extends LiquidBlock {
 	public OilBlock() {
-		super(() -> MoreGeneratorsModFluids.OIL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.WATER).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
+		super(() -> MoreGeneratorsModFluids.OIL.get(), BlockBehaviour.Properties.of().mapColor(MapColor.FIRE).strength(100f).noCollission().noLootTable().liquid().pushReaction(PushReaction.DESTROY).sound(SoundType.EMPTY).replaceable());
 	}
 }

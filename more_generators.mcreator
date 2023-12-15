@@ -39,13 +39,13 @@
       "registry_name": "oil",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/block/oil.json",
-          "src/main/resources/assets/more_generators/models/item/oil_bucket.json",
-          "src/main/resources/assets/more_generators/blockstates/oil.json",
+          "src/main/java/net/mcreator/moregenerators/fluid/types/OilFluidType.java",
           "src/main/java/net/mcreator/moregenerators/fluid/OilFluid.java",
           "src/main/java/net/mcreator/moregenerators/block/OilBlock.java",
-          "src/main/java/net/mcreator/moregenerators/fluid/types/OilFluidType.java",
-          "src/main/java/net/mcreator/moregenerators/item/OilItem.java"
+          "src/main/resources/assets/more_generators/models/item/oil_bucket.json",
+          "src/main/resources/assets/more_generators/blockstates/oil.json",
+          "src/main/java/net/mcreator/moregenerators/item/OilItem.java",
+          "src/main/resources/assets/more_generators/models/block/oil.json"
         ]
       }
     },
