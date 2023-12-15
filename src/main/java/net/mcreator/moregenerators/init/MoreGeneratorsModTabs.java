@@ -23,7 +23,6 @@ public class MoreGeneratorsModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(MoreGeneratorsModItems.BIOFUEL.get());
 			tabData.accept(MoreGeneratorsModItems.OIL_BUCKET.get());
 		}
 	}
