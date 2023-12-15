@@ -133,6 +133,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "gui.more_generators.biomassgui.label_s": "Biomass Burner",
       "fluid.more_generators.oil": "Oil",
       "item.more_generators.oil_bucket": "Oil Bucket",
       "block.more_generators.sss": "SSS",

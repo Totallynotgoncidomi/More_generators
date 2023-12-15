@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
-import net.mcreator.moregenerators.MoreGeneratorsMod;
 
 import java.util.function.Supplier;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -23,12 +22,10 @@ public class BiomassworkProcedure {
 			return;
 		double energia = 0;
 		if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == MoreGeneratorsModItems.BIOFUEL.get()) {
-			MoreGeneratorsMod.queueServerWork(40, () -> {
-				if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-					((Slot) _slots.get(0)).remove(1);
-					_player.containerMenu.broadcastChanges();
-				}
-			});
+			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+				((Slot) _slots.get(0)).remove(1);
+				_player.containerMenu.broadcastChanges();
+			}
 			energia = new Object() {
 				public int receiveEnergySimulate(LevelAccessor level, BlockPos pos, int _amount) {
 					AtomicInteger _retval = new AtomicInteger(0);
