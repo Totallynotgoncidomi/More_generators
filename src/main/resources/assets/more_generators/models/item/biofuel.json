@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "more_generators:item/biofuel"
+    "layer0": "more_generators:item/biofuelv4"
   }
 }
