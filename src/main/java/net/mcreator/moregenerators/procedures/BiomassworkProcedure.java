@@ -27,14 +27,14 @@ public class BiomassworkProcedure {
 		double energia = 0;
 		double Output = 0;
 		if (new Object() {
-			public boolean canReceiveEnergy(LevelAccessor level, BlockPos pos) {
-				AtomicBoolean _retval = new AtomicBoolean(false);
+			public int getEnergyStored(LevelAccessor level, BlockPos pos) {
+				AtomicInteger _retval = new AtomicInteger(0);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
+					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.getEnergyStored()));
 				return _retval.get();
 			}
-		}.canReceiveEnergy(world, BlockPos.containing(x, y, z))) {
+		}.getEnergyStored(world, BlockPos.containing(x, y, z)) < 400000) {
 			if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == MoreGeneratorsModItems.BIOFUEL.get()) {
 				MoreGeneratorsMod.queueServerWork(20, () -> {
 					if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
