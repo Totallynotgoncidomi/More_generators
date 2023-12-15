@@ -13,7 +13,7 @@ import java.util.List;
 
 public class BiofuelItem extends Item {
 	public BiofuelItem() {
-		super(new Item.Properties().stacksTo(30).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-3).saturationMod(-0.5f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(30).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat().build()));
 	}
 
 	@Override
