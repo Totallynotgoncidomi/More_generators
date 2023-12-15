@@ -11,6 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.moregenerators.block.entity.BiomassBurnerBlockEntity;
 import net.mcreator.moregenerators.MoreGeneratorsMod;
 
 public class MoreGeneratorsModBlockEntities {
