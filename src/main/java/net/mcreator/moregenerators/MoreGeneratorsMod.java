@@ -35,6 +35,7 @@ import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluids;
 import net.mcreator.moregenerators.init.MoreGeneratorsModFluidTypes;
 import net.mcreator.moregenerators.init.MoreGeneratorsModBlocks;
+import net.mcreator.moregenerators.init.MoreGeneratorsModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -55,7 +56,7 @@ public class MoreGeneratorsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MoreGeneratorsModBlocks.REGISTRY.register(bus);
-
+		MoreGeneratorsModBlockEntities.REGISTRY.register(bus);
 		MoreGeneratorsModItems.REGISTRY.register(bus);
 
 		MoreGeneratorsModTabs.REGISTRY.register(bus);
