@@ -132,7 +132,7 @@ public class BiomassBurnerBlockEntity extends RandomizableContainerBlockEntity i
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(400000, 100, 200, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(400000, 0, 200, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);

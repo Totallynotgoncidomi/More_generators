@@ -3,10 +3,10 @@
   "textures": {
     "down": "more_generators:block/biomasstop",
     "up": "more_generators:block/biomasstop",
-    "north": "more_generators:block/furnace_top",
-    "east": "more_generators:block/biomasstop",
+    "north": "more_generators:block/biomassburnerfrontshaded",
+    "east": "more_generators:block/biomassburnersides",
     "south": "more_generators:block/biomasstop",
-    "west": "more_generators:block/biomasstop",
+    "west": "more_generators:block/biomassburnersides",
     "particle": "more_generators:block/biomasstop"
   },
   "render_type": "solid"
