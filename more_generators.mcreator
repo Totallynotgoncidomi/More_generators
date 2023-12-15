@@ -25,8 +25,8 @@
       "registry_name": "biofuel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/item/biofuel.json",
-          "src/main/java/net/mcreator/moregenerators/item/BiofuelItem.java"
+          "src/main/java/net/mcreator/moregenerators/item/BiofuelItem.java",
+          "src/main/resources/assets/more_generators/models/item/biofuel.json"
         ]
       }
     },
