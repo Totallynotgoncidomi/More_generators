@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "biomassv1",
+    "texture": "biofuel",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
