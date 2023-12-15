@@ -9,10 +9,10 @@
       "registry_name": "sss",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/block/sss.json",
-          "src/main/java/net/mcreator/moregenerators/block/SSSBlock.java",
+          "src/main/resources/assets/more_generators/models/item/sss.json",
           "src/main/resources/assets/more_generators/blockstates/sss.json",
-          "src/main/resources/assets/more_generators/models/item/sss.json"
+          "src/main/resources/assets/more_generators/models/block/sss.json",
+          "src/main/java/net/mcreator/moregenerators/block/SSSBlock.java"
         ]
       }
     },
@@ -25,8 +25,8 @@
       "registry_name": "biofuel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/item/biofuel.json",
-          "src/main/java/net/mcreator/moregenerators/item/BiofuelItem.java"
+          "src/main/java/net/mcreator/moregenerators/item/BiofuelItem.java",
+          "src/main/resources/assets/more_generators/models/item/biofuel.json"
         ]
       }
     },
@@ -53,15 +53,16 @@
       "name": "BiomassBurner",
       "type": "block",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "biomass_burner",
       "metadata": {
         "files": [
-          "src/main/resources/assets/more_generators/models/item/biomass_burner.json",
           "src/main/resources/assets/more_generators/blockstates/biomass_burner.json",
           "src/main/java/net/mcreator/moregenerators/block/BiomassBurnerBlock.java",
-          "src/main/resources/assets/more_generators/models/block/biomass_burner.json"
+          "src/main/resources/assets/more_generators/models/block/biomass_burner.json",
+          "src/main/java/net/mcreator/moregenerators/block/entity/BiomassBurnerBlockEntity.java",
+          "src/main/resources/assets/more_generators/models/item/biomass_burner.json"
         ]
       }
     },
@@ -87,8 +88,8 @@
       "registry_name": "biomassgui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/moregenerators/world/inventory/BiomassguiMenu.java",
-          "src/main/java/net/mcreator/moregenerators/client/gui/BiomassguiScreen.java"
+          "src/main/java/net/mcreator/moregenerators/client/gui/BiomassguiScreen.java",
+          "src/main/java/net/mcreator/moregenerators/world/inventory/BiomassguiMenu.java"
         ]
       }
     },
