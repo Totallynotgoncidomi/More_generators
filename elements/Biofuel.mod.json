@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "biomassv1",
+    "texture": "sdfg",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
     "name": "Biofuel",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "DECORATIONS"
     },
     "stackSize": 64,
     "enchantability": 0,
