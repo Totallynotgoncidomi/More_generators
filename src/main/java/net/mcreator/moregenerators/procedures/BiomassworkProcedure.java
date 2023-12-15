@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.moregenerators.init.MoreGeneratorsModItems;
@@ -64,7 +65,7 @@ public class BiomassworkProcedure {
 				AtomicBoolean _retval = new AtomicBoolean(false);
 				BlockEntity _ent = level.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> _retval.set(capability.canReceive()));
+					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> _retval.set(capability.canReceive()));
 				return _retval.get();
 			}
 		}.canReceiveEnergy(world, BlockPos.containing(x, y + 1, z))) {
@@ -72,7 +73,7 @@ public class BiomassworkProcedure {
 				BlockEntity _ent = world.getBlockEntity(BlockPos.containing(x, y + 1, z));
 				int _amount = (int) Output;
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ENERGY, null).ifPresent(capability -> capability.receiveEnergy(_amount, false));
+					_ent.getCapability(ForgeCapabilities.ENERGY, Direction.UP).ifPresent(capability -> capability.receiveEnergy(_amount, false));
 			}
 		}
 	}
