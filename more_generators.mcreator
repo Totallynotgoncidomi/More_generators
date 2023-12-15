@@ -1,0 +1,49 @@
+{
+  "mod_elements": [
+    {
+      "name": "SSS",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sss",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/more_generators/models/item/sss.json",
+          "src/main/resources/assets/more_generators/blockstates/sss.json",
+          "src/main/resources/assets/more_generators/models/block/sss.json",
+          "src/main/java/net/mcreator/moregenerators/block/SSSBlock.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.more_generators.sss": "SSS"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "more_generators",
+    "modName": "More generators",
+    "version": "1.0.0",
+    "author": "Gamer i5, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.moregenerators",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
