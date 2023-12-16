@@ -177,6 +177,37 @@
           "src/main/resources/data/more_generators/recipes/biomass_burner_recp.json"
         ]
       }
+    },
+    {
+      "name": "BiomassBurnerUpdateTick",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomass_burner_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/procedures/BiomassBurnerUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
