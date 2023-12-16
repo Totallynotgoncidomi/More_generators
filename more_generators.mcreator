@@ -1,22 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "SSS",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sss",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/more_generators/models/item/sss.json",
-          "src/main/resources/assets/more_generators/blockstates/sss.json",
-          "src/main/resources/assets/more_generators/models/block/sss.json",
-          "src/main/java/net/mcreator/moregenerators/block/SSSBlock.java"
-        ]
-      }
-    },
-    {
       "name": "Biofuel",
       "type": "item",
       "sortid": 1,
@@ -180,6 +164,19 @@
           "src/main/java/net/mcreator/moregenerators/item/EnergyMeterItem.java"
         ]
       }
+    },
+    {
+      "name": "BiomassBurnerRecp",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomass_burner_recp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/more_generators/recipes/biomass_burner_recp.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -189,7 +186,6 @@
       "gui.more_generators.biomassgui.label_s": "Biomass Burner",
       "fluid.more_generators.oil": "Oil",
       "item.more_generators.oil_bucket": "Oil Bucket",
-      "block.more_generators.sss": "SSS",
       "block.more_generators.oil": "Oil",
       "item.more_generators.biofuel": "Biofuel",
       "block.more_generators.biomass_burner": "Biomass Burner",
