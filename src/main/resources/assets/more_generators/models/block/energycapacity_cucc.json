@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "more_generators:block/biomasstop",
+    "up": "more_generators:block/biomasstop",
+    "north": "more_generators:block/biomasstop",
+    "east": "more_generators:block/biomasstop",
+    "south": "more_generators:block/biomasstop",
+    "west": "more_generators:block/biomasstop",
+    "particle": "more_generators:block/biomasstop"
+  },
+  "render_type": "solid"
+}

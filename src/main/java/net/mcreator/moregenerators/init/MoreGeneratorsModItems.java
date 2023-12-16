@@ -23,6 +23,7 @@ public class MoreGeneratorsModItems {
 	public static final RegistryObject<Item> OIL_BUCKET = REGISTRY.register("oil_bucket", () -> new OilItem());
 	public static final RegistryObject<Item> BIOMASS_BURNER = block(MoreGeneratorsModBlocks.BIOMASS_BURNER);
 	public static final RegistryObject<Item> ENERGY_METER = REGISTRY.register("energy_meter", () -> new EnergyMeterItem());
+	public static final RegistryObject<Item> ENERGYCAPACITY_CUCC = block(MoreGeneratorsModBlocks.ENERGYCAPACITY_CUCC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

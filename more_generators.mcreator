@@ -90,10 +90,6 @@
         ],
         "dependencies": [
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -208,6 +204,65 @@
           }
         ]
       }
+    },
+    {
+      "name": "EnergycapacityCucc",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "energycapacity_cucc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/block/entity/EnergycapacityCuccBlockEntity.java",
+          "src/main/resources/assets/more_generators/models/item/energycapacity_cucc.json",
+          "src/main/resources/assets/more_generators/blockstates/energycapacity_cucc.json",
+          "src/main/resources/assets/more_generators/models/block/energycapacity_cucc.json",
+          "src/main/java/net/mcreator/moregenerators/block/EnergycapacityCuccBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Biofuelburn",
+      "type": "itemextension",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biofuelburn",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "BiomassBurnerBlockAdded",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "biomass_burner_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/moregenerators/procedures/BiomassBurnerBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -217,6 +272,7 @@
       "gui.more_generators.biomassgui.label_s": "Biomass Burner",
       "fluid.more_generators.oil": "Oil",
       "item.more_generators.oil_bucket": "Oil Bucket",
+      "block.more_generators.energycapacity_cucc": "Energycapacity Cucc",
       "block.more_generators.oil": "Oil",
       "item.more_generators.biofuel": "Biofuel",
       "block.more_generators.biomass_burner": "Biomass Burner",

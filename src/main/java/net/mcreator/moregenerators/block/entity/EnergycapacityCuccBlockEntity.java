@@ -10,34 +10,31 @@ import net.minecraftforge.common.capabilities.Capability;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.IntTag;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.moregenerators.world.inventory.BiomassguiMenu;
 import net.mcreator.moregenerators.init.MoreGeneratorsModBlockEntities;
 
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
 
-import io.netty.buffer.Unpooled;
-
-public class BiomassBurnerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
+public class EnergycapacityCuccBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public BiomassBurnerBlockEntity(BlockPos position, BlockState state) {
-		super(MoreGeneratorsModBlockEntities.BIOMASS_BURNER.get(), position, state);
+	public EnergycapacityCuccBlockEntity(BlockPos position, BlockState state) {
+		super(MoreGeneratorsModBlockEntities.ENERGYCAPACITY_CUCC.get(), position, state);
 	}
 
 	@Override
@@ -84,7 +81,7 @@ public class BiomassBurnerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("biomass_burner");
+		return Component.literal("energycapacity_cucc");
 	}
 
 	@Override
@@ -94,12 +91,12 @@ public class BiomassBurnerBlockEntity extends RandomizableContainerBlockEntity i
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new BiomassguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return ChestMenu.threeRows(id, inventory);
 	}
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Biomass Burner");
+		return Component.literal("Energycapacity Cucc");
 	}
 
 	@Override
@@ -132,7 +129,7 @@ public class BiomassBurnerBlockEntity extends RandomizableContainerBlockEntity i
 		return true;
 	}
 
-	private final EnergyStorage energyStorage = new EnergyStorage(20000, 200, 200, 0) {
+	private final EnergyStorage energyStorage = new EnergyStorage(400000, 200, 200, 0) {
 		@Override
 		public int receiveEnergy(int maxReceive, boolean simulate) {
 			int retval = super.receiveEnergy(maxReceive, simulate);
